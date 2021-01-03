@@ -1,7 +1,7 @@
-# ClearBlade-Challenge
+# [ClearBlade](https://www.clearblade.com/)-Challenge
 
 Project Description:
-  > This project uses the [ClearBlade](https://www.clearblade.com/) Platform and ClearBlade [Python SDK](https://github.com/ClearBlade/ClearBlade-Python-SDK) to develop a IoT solution for 
+  > This project uses the [ClearBlade Platform](https://platform.clearblade.com/) and ClearBlade [Python SDK](https://github.com/ClearBlade/ClearBlade-Python-SDK) to develop a IoT solution for 
   monitoring/storing real time CPU analytics.
   
 Steps to Running This Project:
