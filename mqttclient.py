@@ -2,14 +2,14 @@ from clearblade.ClearBladeCore import System, Query, Developer, registerDev
 import urllib.request, json, time
 
 ## New system with ClearBlade key and secret
-systemKey = "86a2f0fe0b96c189d0c48face3b401"
-systemSecret = "86A2F0FE0BECA396ACDEA1CDA6E801"
+systemKey = "SYSTEMKEY_HERE"
+systemSecret = "SYSTEMSECRET_HERE"
 
 mySystem = System(systemKey, systemSecret)
 
 ## New device with Clearblade active key and name
-deviceName = "rohith-mac"
-deviceActiveKey = "k7d14G7iy5Xnq6rH670c63"
+deviceName = "DEVICENAME_HERE"
+deviceActiveKey = "ACTIVEKEY_HERE"
 macDevice = mySystem.Device(deviceName, deviceActiveKey)
 token = macDevice.token
 
