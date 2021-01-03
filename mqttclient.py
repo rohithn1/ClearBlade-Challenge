@@ -16,22 +16,20 @@ token = macDevice.token
 ## Using device to access messaging client
 mqtt = mySystem.Messaging(macDevice, port=1883)
 
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# subscribeTopic = "rohith-mac/1/requests"
-# def on_connect(client, userdata, flags, rc):
-# 	global subscribeTopic
-# 	client.subscribe(subscribeTopic)
+subscribeTopic = "rohith-mac/1/requests"
+def on_connect(client, userdata, flags, rc):
+	global subscribeTopic
+	client.subscribe(subscribeTopic)
 
-# incomingRequest = None
+incomingRequest = None
 
-# def on_message(client, userdata, msg):
-# 	global incomingRequest
-# 	incomingRequest = (msg.payload).decode('utf-8')
+def on_message(client, userdata, msg):
+	global incomingRequest
+	incomingRequest = (msg.payload).decode('utf-8')
 
-# mqtt.on_connect = on_connect
-# mqtt.on_message = on_message
-# mqtt.connect()
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mqtt.on_connect = on_connect
+mqtt.on_message = on_message
+mqtt.connect()
 
 ## Defining publish topic
 publishTopic = "rohith-mac/1/cpu-raw"
